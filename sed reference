@@ -1,0 +1,33 @@
+
+just for clarify, space must be scaped, so it is: s/\ \ */\ /g
+
+Or,  sed -e 's/\ \ */,/g' 
+
+sed -e 's/\ \ */,/g;s/^,//;s/,$//'
+
+
+tr -s '[:space:]'
+
+
+Remove rest of the line after a pattern "_"
+
+sed 's/_.*//'
+
+sed edit file in place
+
+perl -pi -e 's/foo/bar/g' file.txt
+
+
+sed edit file in place
+ 
+perl -pi -e 's/foo/bar/g' file.txt
+ 
+ 
+More than one sed command
+egrep "traces" | awk -F, '{print $4}' | sed 's/"//g;s/ddev//')
+
+
+Add korn shell variable
+
+      echo $Header | sed s/device/${i}/ > Dev_$i.csv
+
